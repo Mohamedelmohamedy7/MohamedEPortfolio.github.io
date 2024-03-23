@@ -127,6 +127,51 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                 crossAxisCellCount: 1,
                 mainAxisCellCount: 1,
                 child: Tile(index: 13),
+              ),  StaggeredGridTile.count(
+                crossAxisCellCount: 1,
+                mainAxisCellCount: 1,
+                child: Tile(index: 14),
+              ),  StaggeredGridTile.count(
+                crossAxisCellCount: 1,
+                mainAxisCellCount: 1,
+                child: Tile(index: 15),
+              ),  StaggeredGridTile.count(
+                crossAxisCellCount: 1,
+                mainAxisCellCount: 1,
+                child: Tile(index: 16),
+              ),  StaggeredGridTile.count(
+                crossAxisCellCount: 1,
+                mainAxisCellCount: 1,
+                child: Tile(index: 17),
+              ), StaggeredGridTile.count(
+                crossAxisCellCount: 1,
+                mainAxisCellCount: 1,
+                child: Tile(index: 18),
+              ),
+              StaggeredGridTile.count(
+                crossAxisCellCount: 1,
+                mainAxisCellCount: 1,
+                child: Tile(index: 19),
+              ),
+              StaggeredGridTile.count(
+                crossAxisCellCount: 1,
+                mainAxisCellCount: 1,
+                child: Tile(index: 20),
+              ),
+              StaggeredGridTile.count(
+                crossAxisCellCount: 1,
+                mainAxisCellCount: 1,
+                child: Tile(index: 21),
+              ),
+              StaggeredGridTile.count(
+                crossAxisCellCount: 1,
+                mainAxisCellCount: 1,
+                child: Tile(index: 22),
+              ),
+              StaggeredGridTile.count(
+                crossAxisCellCount: 1,
+                mainAxisCellCount: 1,
+                child: Tile( index: 23,),
               ),
             ],
 
@@ -197,6 +242,7 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                 padding: EdgeInsets.all(15.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -224,6 +270,7 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                     Padding(
                       padding: const EdgeInsets.only(top: 10.0, bottom: 8.0),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Expanded(
                             child: Text(

@@ -141,8 +141,8 @@ class _IntroTabState extends State<IntroTab> {
                                   colorFilter: ColorFilter.mode(
                                       AppColors().primaryColor,
                                       isHovered
-                                          ? BlendMode.lighten
-                                          : BlendMode.color),
+                                          ? BlendMode.color
+                                          : BlendMode.lighten),
                                   image: AssetImage(
                                       "assets/svg/myImagemobile.webp")),
                               color: Colors.transparent),

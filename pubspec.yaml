@@ -41,7 +41,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/svg/
-    - assets/svg/appLogo.png
+#    - assets/svg/appLogo.png
 
   fonts:
     - family: sfmono

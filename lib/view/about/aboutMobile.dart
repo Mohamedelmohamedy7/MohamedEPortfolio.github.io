@@ -100,7 +100,7 @@ class _AboutMobileState extends State<AboutMobile> {
               ),
             ),
           ),
-          SizedBox(height: 30,),
+
           Row(
             children: [
               Icon(Icons.blur_on_sharp),
@@ -221,6 +221,91 @@ class _AboutMobileState extends State<AboutMobile> {
                   )),
             ],
           ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(Icons.blur_on_sharp),
+              Expanded(
+                child: Text(Strings.tech11,
+                    style: GoogleFonts.robotoFlex(
+                      color: AppColors().textLight,
+                      letterSpacing: 1,
+                      height: 1.5,
+                      fontSize: 17,
+                    ),maxLines: 2,),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Icon(Icons.blur_on_sharp),
+              Expanded(
+                child: Text(Strings.tech12,
+                    style: GoogleFonts.robotoFlex(
+                      color: AppColors().textLight,
+                      letterSpacing: 1,
+                      height: 1.5,
+                      fontSize: 17,
+                    )
+                ,maxLines: 2,
+                ),
+              ),
+            ],
+          ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(Icons.blur_on_sharp),
+              Expanded(
+                child: Text(Strings.tech13,
+                    style: GoogleFonts.robotoFlex(
+                      color: AppColors().textLight,
+                      letterSpacing: 1,
+                      height: 1.5,
+                      fontSize: 17,
+                    ),
+                maxLines: 2,
+                ),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Icon(Icons.blur_on_sharp),
+              Text(Strings.tech14,
+                  style: GoogleFonts.robotoFlex(
+                    color: AppColors().textLight,
+                    letterSpacing: 1,
+                    height: 1.5,
+                    fontSize: 17,
+                  )),
+            ],
+          ),
+          Row(
+            children: [
+              Icon(Icons.blur_on_sharp),
+              Text(Strings.tech15,
+                  style: GoogleFonts.robotoFlex(
+                    color: AppColors().textLight,
+                    letterSpacing: 1,
+                    height: 1.5,
+                    fontSize: 17,
+                  )),
+            ],
+          ),
+          Row(
+            children: [
+              Icon(Icons.blur_on_sharp),
+              Text(Strings.tech16,
+                  style: GoogleFonts.robotoFlex(
+                    color: AppColors().textLight,
+                    letterSpacing: 1,
+                    height: 1.5,
+                    fontSize: 17,
+                  )),
+            ],
+          ),
+          SizedBox(height: 20,)
         ],
       ),
     );

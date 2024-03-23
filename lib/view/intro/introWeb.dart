@@ -28,7 +28,7 @@ class _IntroWebState extends State<IntroWeb> {
       color: Colors.transparent,
       margin: EdgeInsets.only(
           left: AppClass().getMqWidth(context) * 0.01,
-          top: AppClass().getMqHeight(context) * 0.1),
+          top: AppClass().getMqHeight(context) * 0.03),
       child: Row(
         children: [
           Column(
@@ -36,7 +36,7 @@ class _IntroWebState extends State<IntroWeb> {
             children: [
               newLoading == true
                   ? Padding(
-                      padding: const EdgeInsets.only(left: 8.0, top: 50),
+                      padding: const EdgeInsets.only(left: 8.0, top: 20),
                       child: Text(
                         Strings.welcomeTxt,
                         style: TextStyle(
@@ -45,7 +45,7 @@ class _IntroWebState extends State<IntroWeb> {
                             fontFamily: 'sfmono'),
                       ))
                   : Padding(
-                      padding: const EdgeInsets.only(left: 8.0, top: 50),
+                      padding: const EdgeInsets.only(left: 8.0, top: 20),
                       child: AnimatedTextKit(
                         animatedTexts: [
                           TyperAnimatedText(

@@ -29,7 +29,7 @@ class _IntroMobileState extends State<IntroMobile> {
          mainAxisAlignment: MainAxisAlignment.center,
          crossAxisAlignment: CrossAxisAlignment.start,
          children: [
-           SizedBox(height: 50,),
+           SizedBox(height: 20,),
            Text(
              Strings.welcomeTxt,
              style: TextStyle(
@@ -136,8 +136,8 @@ class _IntroMobileState extends State<IntroMobile> {
                                    colorFilter: ColorFilter.mode(
                                        AppColors().primaryColor,
                                        isHovered
-                                           ? BlendMode.lighten
-                                           : BlendMode.color),
+                                           ? BlendMode.color
+                                           : BlendMode.lighten),
                                    image: AssetImage(
                                        "assets/svg/myImagemobile.webp")),
                                color: Colors.transparent),

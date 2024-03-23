@@ -125,131 +125,7 @@ class _AboutWebState extends ConsumerState<AboutWeb> {
                             crossAxisCount: 2,
                             shrinkWrap: true,
                             childAspectRatio: 10,
-                            children: [
-                              Row(
-                                children: [
-                                  Icon(Icons.blur_on_sharp),
-                                  Text(Strings.tech1,
-                                      style: GoogleFonts.robotoFlex(
-                                        color: AppColors().textLight,
-                                        letterSpacing: 1,
-                                        height: 1.5,
-                                        fontSize: 17,
-                                      )),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Icon(Icons.blur_on_sharp),
-                                  Text(Strings.tech2,
-                                      style: GoogleFonts.robotoFlex(
-                                        color: AppColors().textLight,
-                                        letterSpacing: 1,
-                                        height: 1.5,
-                                        fontSize: 17,
-                                      )),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Icon(Icons.blur_on_sharp),
-                                  Text(Strings.tech3,
-                                      style: GoogleFonts.robotoFlex(
-                                        color: AppColors().textLight,
-                                        letterSpacing: 1,
-                                        height: 1.5,
-                                        fontSize: 17,
-                                      )),
-                                ],
-                              ),
-                              Row(
-                                children: [
-
-                                  Icon(Icons.blur_on_sharp,size: 20,),
-                                  Text(Strings.tech4,
-                                      style: GoogleFonts.robotoFlex(
-                                        color: AppColors().textLight,
-                                        letterSpacing: 1,
-                                        height: 1.5,
-                                        fontSize: 17,
-                                      )),
-                                ],
-                              ),
-
-                              Row(
-                                children: [
-                                  Icon(Icons.blur_on_sharp),
-                                  Text(Strings.tech5,
-                                      style: GoogleFonts.robotoFlex(
-                                        color: AppColors().textLight,
-                                        letterSpacing: 1,
-                                        height: 1.5,
-                                        fontSize: 17,
-                                      )),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Icon(Icons.blur_on_sharp),
-                                  Text(Strings.tech6,
-                                      style: GoogleFonts.robotoFlex(
-                                        color: AppColors().textLight,
-                                        letterSpacing: 1,
-                                        height: 1.5,
-                                        fontSize: 17,
-                                      )),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Icon(Icons.blur_on_sharp),
-                                  Text(Strings.tech7,
-                                      style: GoogleFonts.robotoFlex(
-                                        color: AppColors().textLight,
-                                        letterSpacing: 1,
-                                        height: 1.5,
-                                        fontSize: 17,
-                                      )),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Icon(Icons.blur_on_sharp),
-                                  Text(Strings.tech8,
-                                      style: GoogleFonts.robotoFlex(
-                                        color: AppColors().textLight,
-                                        letterSpacing: 1,
-                                        height: 1.5,
-                                        fontSize: 17,
-                                      )),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Icon(Icons.blur_on_sharp),
-                                  Text(Strings.tech9,
-                                      style: GoogleFonts.robotoFlex(
-                                        color: AppColors().textLight,
-                                        letterSpacing: 1,
-                                        height: 1.5,
-                                        fontSize: 17,
-                                      )),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Icon(Icons.blur_on_sharp),
-                                  Text(Strings.tech10,
-                                      style: GoogleFonts.robotoFlex(
-                                        color: AppColors().textLight,
-                                        letterSpacing: 1,
-                                        height: 1.5,
-                                        fontSize: 17,
-                                      )),
-                                ],
-                              ),
-
-                            ]),
+                            children: topics()),
                       ),
                     ],
                   ),
@@ -298,10 +174,10 @@ class _AboutWebState extends ConsumerState<AboutWeb> {
                                       colorFilter: ColorFilter.mode(
                                           AppColors().primaryColor,
                                           isHovered
-                                              ? BlendMode.lighten
-                                              : BlendMode.color),
+                                              ? BlendMode.color
+                                              : BlendMode.lighten),
                                       image: AssetImage(
-                                        "assets/svg/myImage.webp")),
+                                        "assets/svg/myImagemobile.webp")),
                                   color: Colors.transparent),
                             ),
                           ),
@@ -317,4 +193,6 @@ class _AboutWebState extends ConsumerState<AboutWeb> {
       ),
     );
   }
+
+
 }

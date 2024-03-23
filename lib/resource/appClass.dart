@@ -1,14 +1,9 @@
-import 'dart:convert';
 
 import 'package:emailjs/emailjs.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
-import 'package:mailer/mailer.dart';
-import 'package:mailer/smtp_server/gmail.dart';
 import 'package:portfolio/model/models.dart';
 import 'package:portfolio/resource/styles.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:http/http.dart' as http;
 
 enum ScreenType { mobile, tab, web }
 
@@ -19,17 +14,9 @@ class AppClass {
 
   /* URL */
   static final resumeDownloadURL =
-      '''https://drive.google.com/file/d/13WF8yc_2SzFYtirqPlo82RKeSizx1SN-/view?usp=sharing''';
+      '''https://drive.google.com/file/d/1DdlMn7K_cA6cvijmXR4MqsLOy9cK-q7-/view?usp=sharing''';
 
-  static final gitSafeC19 = '''https://github.com/jeeva-HBK/SafeC19''';
 
-  // static final gitHermarts = '''https://github.com/jeeva-HBK/SafeC19''';
-  static final gitWtIot = '''https://github.com/jeeva-HBK/AutoChem''';
-  static final gitAutoStabilizer =
-      '''https://github.com/jeeva-HBK/AutoStabilizer''';
-  static final gitPAT = '''https://github.com/jeeva-HBK/PAT''';
-
-  // static final gitAVM = '''https://github.com/jeeva-HBK/SafeC19''';
 
   List<WorkModel> projectList = [
     WorkModel(
@@ -45,6 +32,7 @@ class AppClass {
       stack:
           "Flutter|Dart|Provider|RestAPI|FirebaseMessaging|GoogleMapLocation",
     ),
+
     WorkModel(
       projectTitle: "FineGold - فاين جولد",
       projectContent:
@@ -85,6 +73,7 @@ class AppClass {
       stack:
           "Flutter|Dart|Get-x|RestAPI|FirebaseMessaging Notification|Google Map Location,",
     ),
+
     WorkModel(
       projectTitle: "EverPure",
       projectContent:
@@ -99,7 +88,6 @@ class AppClass {
       stack:
           "Flutter|Dart|Get-x|RestAPI|FirebaseMessaging Notification|Google Map Location,",
     ),
-
     WorkModel(
       projectTitle: "BeitWard",
       projectContent:
@@ -114,7 +102,6 @@ class AppClass {
       stack:
           "Flutter|Dart|Bloc|RestAPI|FirebaseMessaging Notification|Google Map Location,",
     ),
-
     WorkModel(
       projectTitle: "Eval Eltorkey - ايفال التركي",
       projectContent:
@@ -129,6 +116,7 @@ class AppClass {
       stack:
           "Flutter|Dart|Bloc|RestAPI|FirebaseMessaging Notification|Google Map Location,",
     ),
+
     WorkModel(
       projectTitle: "El-Shershaby - الشرشابي",
       projectContent:
@@ -170,6 +158,7 @@ class AppClass {
       stack:
           "Flutter|Dart|Provider|Firebase Firestore|FirebaseMessaging Notification|GoogleMapLocation",
     ),
+
     WorkModel(
       projectTitle: "Arabia Cafe - بن ارابيا",
       projectContent:
@@ -211,6 +200,7 @@ class AppClass {
       stack:
           "Flutter|Dart|Provider|Firebase Firestore|FirebaseMessaging Notification|GoogleMapLocation",
     ),
+
     WorkModel(
       projectTitle: "Tsaly Elhelw - تسالى الحلو ",
       projectContent:
@@ -225,6 +215,121 @@ class AppClass {
       stack:
           "Flutter|Dart|Bloc|Firebase Firestore|FirebaseMessaging Notification|GoogleMapLocation",
     ),
+    WorkModel(
+      projectTitle: "Rosheta - روشتة",
+      projectContent:
+          "Use the Rosheta application to empower yourself in managing your health care, as it allows you to book easily and effectively with specialized doctors Discover our innovative features that make it easier to find doctors, schedule appointments, and track your appointment history.",
+      tech1: "Android",
+      androidUrl:
+          "https://play.google.com/store/apps/details?src=AppAgg.com&id=com.Hsolution.rosheta",
+      appleUrl:
+          "",
+      tech2: "Ios",
+      image: "rosheta.webp",
+      stack: "Flutter|Dart|Bloc|Firebase Firestore|FirebaseMessaging Notification|GoogleMapLocation",
+    ),
+    WorkModel(
+      projectTitle: "الحسيني ماركت",
+      projectContent:"Al-Hussaini Market: Your global companion for all your shopping needs, accessible wherever you go.",
+       tech1: "Android",
+      androidUrl:
+      "https://play.google.com/store/apps/details?id=com.HSolution.elhusseny",
+      appleUrl:
+      "https://apps.apple.com/us/app/%D8%A7%D9%84%D8%AD%D8%B3%D9%8A%D9%86%D9%8A-%D9%85%D8%A7%D8%B1%D9%83%D8%AA/id6450274034",
+      tech2: "Ios",
+      image: "elhusseny.webp",
+      stack: "Flutter|Dart|Bloc|Firebase Firestore|FirebaseMessaging Notification|GoogleMapLocation",
+    ),
+
+    WorkModel(
+      projectTitle: "Eldokan Delivery",
+      projectContent:"Application of delivery officials for Al-Dukkan Foundation with the highest quality and fastest means",
+      tech1: "Android",
+      androidUrl: "https://play.google.com/store/apps/details?id=com.HSolutions.DokkanDelivery",
+      appleUrl: "https://apps.apple.com/us/app/eldokan-%D8%A7%D9%84%D8%AF%D9%83%D8%A7%D9%86/id6451084277",
+      tech2: "Ios",
+      image: "dokkan.webp",
+      stack: "Flutter|Dart|Bloc|Firebase Firestore|FirebaseMessaging Notification|GoogleMapLocation",
+    ),
+    WorkModel(
+      projectTitle: "أولاد العجيلي",
+      projectContent:"Awlad Al-Ajili for shopping",
+      tech1: "Android",
+      androidUrl: "https://play.google.com/store/apps/details?id=com.fastWorld.elogalymarket",
+      appleUrl: "https://apps.apple.com/us/app/elogaly/id6450907783",
+      tech2: "Ios",
+      image: "elagelly.webp",
+      stack: "Flutter|Dart|Bloc|Firebase Firestore|FirebaseMessaging Notification|GoogleMapLocation",
+    ),
+    WorkModel(
+      projectTitle: "So Sweet",
+      projectContent:"All kinds of sweets and pastries with their original taste",
+      tech1: "Android",
+      androidUrl: "https://play.google.com/store/apps/details?id=com.fastWorld.swetty",
+      appleUrl: "https://apps.apple.com/us/app/so-sweet/id6451386235",
+      tech2: "Ios",
+      image: "sweet.webp",
+      stack: "Flutter|Dart|Bloc|Firebase Firestore|FirebaseMessaging Notification|GoogleMapLocation",
+    ),
+
+    WorkModel(
+      projectTitle: "إكسسوار",
+      projectContent:"Excessoar :  Your global companion for all your shopping needs, accessible wherever you go",
+      tech1: "Android",
+      androidUrl: "https://play.google.com/store/apps/details?id=com.hsolutions.excessoar",
+      appleUrl: "https://apps.apple.com/us/app/%D8%A5%D9%83%D8%B3%D8%B3%D9%88%D8%A7%D8%B1/id6478929965",
+      tech2: "Ios",
+      image: "exccessor.webp",
+      stack: "Flutter | Dart | Bloc |Firebase Firestore|FirebaseMessaging Notification|GoogleMapLocation",
+    ),
+
+
+  WorkModel(
+      projectTitle: "خدمات عمال مصر",
+      projectContent:"شركة سواعد الخليج شركة رائدة فى سوق العمل السعودى ، فى خدمة القطاع الصناعى تهدف الشركة إلى تحقيق رؤية المملكة 2030 لتساهم فى الوصول إلى اقتصاد مستدام كى تصبح الممكلة قوة صناعية رائدة من خلال توفير فرص العمل والوصول إلى اقتصاد مزدهر للملكة",
+      tech1: "Android",
+      androidUrl: "https://play.google.com/store/apps/details?id=com.fast_solutions.egworkers",
+      appleUrl: "https://apps.apple.com/us/app/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%B9%D9%85%D8%A7%D9%84-%D9%85%D8%B5%D8%B1/id6475497927?platform=iphone",
+      tech2: "Ios",
+      image: "mogam3.webp",
+      stack: "Flutter|Dart|Bloc|Firebase Firestore|FirebaseMessaging Notification|GoogleMapLocation",
+    ),
+
+    WorkModel(
+      projectTitle: "Qommission",
+      projectContent:"The Commission application provides many medical services and pharmacies",
+      tech1: "Android",
+      androidUrl: "https://play.google.com/store/apps/details?id=com.fastworld.qommsion",
+      appleUrl: "",
+      tech2: "Ios",
+      image: "Qommission.webp",
+      stack: "Flutter|Dart|Bloc|Firebase Firestore|FirebaseMessaging Notification|GoogleMapLocation",
+    ),
+
+    WorkModel(
+      projectTitle: "Diet Store",
+      projectContent:"Online market for shopping help users to shop their needed from home",
+      tech1: "Android",
+      androidUrl: "https://play.google.com/store/apps/details?id=com.HSolutions.DietStore",
+      appleUrl: "https://apps.apple.com/us/app/%D8%AF%D8%A7%D9%8A%D8%AA-%D8%B3%D8%AA%D9%88%D8%B1/id6443815886?platform=iphone",
+      tech2: "Ios",
+      image: "diet.webp",
+      stack: "Flutter|Dart|Bloc|Firebase Firestore|FirebaseMessaging Notification|GoogleMapLocation",
+    ),
+
+    WorkModel(
+      projectTitle: "سواعد الخليج",
+      projectContent:"For Sawaed Al-Khaleej Company to become, within the Egyptian workers’ system, a service, industrial, and educational entity that affects the international economic system.",
+      tech1: "Android",
+      androidUrl: "https://play.google.com/store/apps/details?id=com.fast_solutions.sawaad",
+      appleUrl: "https://apps.apple.com/us/app/%D8%B3%D9%88%D8%A7%D8%B9%D8%AF-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC/id6473706425",
+      tech2: "Ios",
+      image: "swaad.webp",
+      stack: "Flutter|Dart|Bloc|Firebase Firestore|FirebaseMessaging Notification|GoogleMapLocation",
+    ),
+
+
+
   ];
 
   factory AppClass() {
@@ -275,16 +380,14 @@ class AppClass {
   }
 
   Future<bool> sendEmail(name, contact, msg) async {
-    // set Public Key as global settings
     EmailJS.init(const Options(
       publicKey: 'm2hngmCILd_bGhbyI',
       privateKey: '5fWqvt8BUymvvdl5jEAW2',
     ));
 
     try {
-      // send the email without dynamic variables
-      await EmailJS.send(
-          'service_xm1fio8',
+       await EmailJS.send(
+          'service_27qfm2c',
           'template_dk29ky4',
           {
             'user_name': '$name',
@@ -303,22 +406,5 @@ class AppClass {
       return false;
     }
 
-    // var url = (Uri.parse('https://api.emailjs.com/api/v1.0/email/send'));
-    // var response = await http.post(
-    //   url,
-    //   body: json.encode({
-    //     "service_id": "service_xm1fio8",
-    //     "template_id": "template_dk29ky4",
-    //     "key": "m2hngmCILd_bGhbyI",
-    //     "template_params": {
-    //       'user_name': '$name',
-    //       'user_email': '${contact ?? "mohamedghynm@gmail.com"}',
-    //       "user_message": "$msg",
-    //       "user_subject": "Your Cv ",
-    //     }
-    //   }),
-    // );
-    // print(response.body);
-    // return response.statusCode == 200;
   }
 }
