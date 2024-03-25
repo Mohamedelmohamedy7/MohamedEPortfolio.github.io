@@ -20,7 +20,7 @@ class _ExperienceMobState extends State<ExperienceMob> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: AppClass().getMqHeight(context)*1.2,
+      height: AppClass().getMqHeight(context)*1.5,
       margin: EdgeInsets.only(left: 20.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

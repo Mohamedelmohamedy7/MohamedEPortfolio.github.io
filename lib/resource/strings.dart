@@ -136,37 +136,48 @@ List<Widget> topics() {
     Row(
       children: [
         Icon(Icons.blur_on_sharp),
-        Text(Strings.tech11,
-            style: GoogleFonts.robotoFlex(
-              color: AppColors().textLight,
-              letterSpacing: 1,
-              height: 1.5,
-              fontSize: 17,
-            )),
+        Expanded(
+          child: Text(Strings.tech11,
+              style: GoogleFonts.robotoFlex(
+                color: AppColors().textLight,
+                letterSpacing: 1,
+                height: 1.5,
+                fontSize: 17,
+              ),
+          maxLines: 2,
+          ),
+        ),
       ],
     ),
     Row(
       children: [
         Icon(Icons.blur_on_sharp),
-        Text(Strings.tech12,
-            style: GoogleFonts.robotoFlex(
-              color: AppColors().textLight,
-              letterSpacing: 1,
-              height: 1.5,
-              fontSize: 17,
-            )),
+        Expanded(
+          child: Text(Strings.tech12,
+              style: GoogleFonts.robotoFlex(
+                color: AppColors().textLight,
+                letterSpacing: 1,
+                height: 1.5,
+                fontSize: 17,
+              ),
+            maxLines: 2,),
+        ),
       ],
     ),
     Row(
       children: [
         Icon(Icons.blur_on_sharp),
-        Text(Strings.tech13,
-            style: GoogleFonts.robotoFlex(
-              color: AppColors().textLight,
-              letterSpacing: 1,
-              height: 1.5,
-              fontSize: 17,
-            )),
+        Expanded(
+          child: Text(Strings.tech13,
+              style: GoogleFonts.robotoFlex(
+                color: AppColors().textLight,
+                letterSpacing: 1,
+                height: 1.5,
+                fontSize: 17,
+              ),
+          maxLines: 2,
+          ),
+        ),
       ],
     ),
     Row(
