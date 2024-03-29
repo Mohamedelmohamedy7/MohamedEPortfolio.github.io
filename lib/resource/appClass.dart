@@ -14,7 +14,7 @@ class AppClass {
 
   /* URL */
   static final resumeDownloadURL =
-      '''https://drive.google.com/file/d/1DdlMn7K_cA6cvijmXR4MqsLOy9cK-q7-/view?usp=sharing''';
+      '''https://flowcv.com/resume/tuswofi6w3''';
 
 
 
